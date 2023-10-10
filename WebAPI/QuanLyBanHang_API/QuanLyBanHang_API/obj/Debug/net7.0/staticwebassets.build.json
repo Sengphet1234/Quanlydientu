@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "Hash": "xOSvv2bE8PIrg3iG+MNsNlZAiZ5akPKrp4e/ldJfkaQ=",
+  "Source": "QuanLyBanHang_API",
+  "BasePath": "_content/QuanLyBanHang_API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "QuanLyBanHang_API\\wwwroot",
+      "Source": "QuanLyBanHang_API",
+      "ContentRoot": "E:\\Congty\\DATNselam\\DA_2(dientu)\\Quanlydientu\\WebAPI\\QuanLyBanHang_API\\QuanLyBanHang_API\\wwwroot\\",
+      "BasePath": "_content/QuanLyBanHang_API",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "E:\\Congty\\DATNselam\\DA_2(dientu)\\Quanlydientu\\WebAPI\\QuanLyBanHang_API\\QuanLyBanHang_API\\wwwroot\\css\\site.css",
+      "SourceId": "QuanLyBanHang_API",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\Congty\\DATNselam\\DA_2(dientu)\\Quanlydientu\\WebAPI\\QuanLyBanHang_API\\QuanLyBanHang_API\\wwwroot\\",
+      "BasePath": "_content/QuanLyBanHang_API",
+      "RelativePath": "css/site.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\site.css"
+    }
+  ]
+}

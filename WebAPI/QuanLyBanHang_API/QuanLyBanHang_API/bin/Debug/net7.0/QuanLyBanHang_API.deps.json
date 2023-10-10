@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "QuanLyBanHang_API/1.0.0": {
+        "runtime": {
+          "QuanLyBanHang_API.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "QuanLyBanHang_API/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
