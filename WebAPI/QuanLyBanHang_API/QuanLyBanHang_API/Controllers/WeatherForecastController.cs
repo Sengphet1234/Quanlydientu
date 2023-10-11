@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
-namespace QuanLyBanHang_API
+namespace QuanLyBanHang_API.Controllers
 {
     [ApiController]
     [Route("[controller]")]
@@ -18,26 +18,26 @@ namespace QuanLyBanHang_API
         };
 
         private readonly ILogger<WeatherForecast> _logger;
+        private double index;
 
         public WeatherForecastController(ILogger<WeatherForecast> logger)
         {
             _logger = logger;
         }
+
+        [HttpGet]
+        public IEnumerable<WeatherForecast> Get()
+        {
+            var rng = new Random();
+            return Enumerable.Range(1, 5).Select(Index => new WeatherForecast
+            {
+                Date = DateTime.Now.AddDays(index),
+                TemperatureC = rng.Next(-20, 55),
+                Summarry = Summaries[rng.Next(Summaries.Length)]
+            })
+                .ToArray();
+        }
+
     }
 }
 
-// In SDK-style projects such as this one, several assembly attributes that were historically
-// defined in this file are now automatically added during build and populated with
-// values defined in project properties. For details of which attributes are included
-// and how to customise this process see: https://aka.ms/assembly-info-properties
-
-
-// Setting ComVisible to false makes the types in this assembly not visible to COM
-// components.  If you need to access a type in this assembly from COM, set the ComVisible
-// attribute to true on that type.
-
-[assembly: ComVisible(false)]
-
-// The following GUID is for the ID of the typelib if this project is exposed to COM.
-
-[assembly: Guid("a363dac6-5976-4349-a385-646c808c866d")]
